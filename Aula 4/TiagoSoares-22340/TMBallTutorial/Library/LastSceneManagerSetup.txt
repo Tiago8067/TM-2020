@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/Acer/Desktop/TMBallTutorial/BallTutorial.unity
+- path: Assets/Scenes/Ball.unity
   isLoaded: 1
   isActive: 1
