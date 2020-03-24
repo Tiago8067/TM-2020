@@ -31,7 +31,7 @@
 
      void OnTriggerEnter(Collider other)
      {
-         if (other.gameObject.CompareTag ( "Pick Up"))
+         if (other.gameObject.CompareTag ( "PickUp"))
          {
              other.gameObject.SetActive (false);
              count = count + 1;
@@ -42,7 +42,7 @@
      void SetCountText ()
      {
          countText.text = "Count: " + count.ToString ();
-         if (count >= 12)
+         if (count >= 8)
          {
              winText.text = "You Win!";
          }
