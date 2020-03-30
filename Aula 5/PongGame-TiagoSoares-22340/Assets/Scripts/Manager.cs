@@ -9,7 +9,7 @@ public class Manager : MonoBehaviour
     public GameObject ball;
 
     [Header("Score UI")]
-    public GameObejct player1text;
+    public GameObject player1text;
 
     private int playerScore;
 

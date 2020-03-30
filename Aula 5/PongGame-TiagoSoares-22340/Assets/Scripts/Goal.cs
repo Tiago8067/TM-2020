@@ -8,7 +8,7 @@ public class Goal : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ballTag"))
         {
-            GameObject.Find("gameManagerObj").GetComponent<manager>().Player1Scored();
+            GameObject.Find("gameManagerObj").GetComponent<Manager>().Player1Scored();
         }
     }
 }
