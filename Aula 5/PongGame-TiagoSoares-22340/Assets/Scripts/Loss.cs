@@ -8,7 +8,7 @@ public class Loss : MonoBehaviour
     {
             if (collision.gameObject.CompareTag("ballTag"))
             {
-                GameObject.Find("ball").GetComponent<Ball>().Reset();
+                GameObject.Find("ball").GetComponent<ballcontroller>().Reset();
                 GameObject.Find("gameManagerObj").GetComponent<Manager>().Reset();
                 GameObject.Find("player1").GetComponent<Paddle>().Reset();
             }

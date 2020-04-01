@@ -17,7 +17,7 @@ public class Manager : MonoBehaviour
     {
         playerScore++;
         player1text.GetComponent<TextMeshProUGUI>().text = playerScore.ToString();
-        ball.GetComponent<Ball>().increaseSpeed();
+        ball.GetComponent<ballcontroller>().increaseSpeed();
     }
 
     public void Reset()

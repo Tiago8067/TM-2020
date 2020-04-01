@@ -899,9 +899,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1254533911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85f4be5e3fae7264a8bc95011a6eb938, type: 3}
+  m_Script: {fileID: 11500000, guid: 42b60d1198985114db44121f1b3a6edc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 12
+  rb: {fileID: 1254533914}
 --- !u!1 &1279379080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,6 +1079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85af9bd6027c78447ac2db2249c32491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ball: {fileID: 1254533911}
+  player1text: {fileID: 1588781401}
 --- !u!4 &1337852236
 Transform:
   m_ObjectHideFlags: 0
