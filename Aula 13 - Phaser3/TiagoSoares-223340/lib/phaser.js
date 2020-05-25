@@ -71855,7 +71855,7 @@ Phaser.Loader.prototype = {
     * @method Phaser.Loader#image
     * @param {string} key - Unique asset key of this image file.
     * @param {string} [url] - URL of an image file. If undefined or `null` the url will be set to `<key>.png`, i.e. if `key` was "alien" then the URL will be "alien.png".
-    * @param {boolean} [overwrite=false] - If an unloaded file with a matching key already exists in the queue, this entry will overwrite it.
+    * @param {{frameHeight: number, frameWidth: number}} [overwrite=false] - If an unloaded file with a matching key already exists in the queue, this entry will overwrite it.
     * @return {Phaser.Loader} This Loader instance.
     */
     image: function (key, url, overwrite) {
