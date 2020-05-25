@@ -119,29 +119,22 @@ function create ()
 
     this.physics.add.collider(player, bombs, hitBomb, null, this);
 }
-function update ()
-{
+function update () {
     cursors = this.input.keyboard.createCursorKeys();
-    if (cursors.left.isDown)
-    {
+    if (cursors.left.isDown) {
         player.setVelocityX(-160);
         player.anims.play('left', true);
-    }
-    else if (cursors.right.isDown)
-    {
+    } else if (cursors.right.isDown) {
         player.setVelocityX(160);
         player.anims.play('right', true);
-    }
-    else if(cursors.down.isDown)
-    {
+    } else if (cursors.down.isDown) {
         player.setVelocityY(330)
-    }
-    else {
+    } else {
         player.setVelocityX(0);
         player.anims.play('turn');
     }
 
-    if (cursors.up.isDown && player.body.touching.down)
-    {
+    if (cursors.up.isDown && player.body.touching.down) {
         player.setVelocityY(-330);
     }
+}
