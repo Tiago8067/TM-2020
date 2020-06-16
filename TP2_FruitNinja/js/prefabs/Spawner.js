@@ -33,7 +33,8 @@ FruitNinja.Spawner.prototype.schedule_spawn = function () {
 FruitNinja.Spawner.prototype.spawn = function () {
     var object_name, object_position, object, object_velocity;
     // Obter uma nova posição e velocidade
-    object_position = new Phaser.Point(this.game_state.rnd.between(0.2 * this.game_state.game.world.width, 0.7 * this.game_state.game.world.width), this.game_state.game.world.height);
+    object_position = new Phaser.Point
+    (this.game_state.rnd.between(0.2 * this.game_state.game.world.width, 0.7 * this.game_state.game.world.width), this.game_state.game.world.height);
     object_velocity = this.object_velocity();
     // Obtemos o primeiro objeto a cair ou ser cortado
     object = this.pool.getFirstDead();
